@@ -13,4 +13,4 @@ meteor add chrisdubya:foundation-apps
 Import foundation-apps:
 
 ```
-@import '{chrisdubya:foundation-sites}/scss/foundation';
+@import '{chrisdubya:foundation-apps}/scss/foundation';
