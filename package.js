@@ -13,6 +13,8 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
   api.use('ecmascript');
+  api.use('fourseven:scss@3.4.1', ['client', 'server']);
+  api.imply('fourseven:scss@3.4.1', ['client', 'server']);
   api.addFiles([
       // JS
       'js/foundation-apps.js',
