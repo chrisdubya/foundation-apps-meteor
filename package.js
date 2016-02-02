@@ -17,8 +17,8 @@ Package.onUse(function(api) {
   api.imply('fourseven:scss@3.4.1', ['client', 'server']);
   api.addFiles([
       // JS
-      'js/foundation-apps.js',
-      'js/foundation-apps-templates.js',
+      'foundation-apps.js',
+      'foundation-apps-templates.js',
 
       // SCSS
       '_foundation.scss',
