@@ -1,6 +1,6 @@
 Package.describe({
   name: 'chrisdubya:foundation-apps',
-  version: '0.0.2',
+  version: '0.0.3',
   // Brief, one-line summary of the package.
   summary: 'Foundation Apps Meteor Package with SCSS and JS',
   // URL to the Git repository containing the source code for this package.
@@ -16,10 +16,6 @@ Package.onUse(function(api) {
   api.use('fourseven:scss@3.4.1', ['client', 'server']);
   api.imply('fourseven:scss@3.4.1', ['client', 'server']);
   api.addFiles([
-      // JS
-      'foundation-apps.js',
-      'foundation-apps-templates.js',
-
       // SCSS
       '_foundation.scss',
       '_settings.scss',
