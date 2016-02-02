@@ -1,4 +1,8 @@
-# A Meteor package of Zurb's Foundation Apps
+# A [Meteor](http://meteor.com) package of Zurb's [Foundation for Apps](http://foundation.zurb.com/apps.html)
+
+** Includes all .scss and .js files **
+
+---
 
 ## Installation
 
