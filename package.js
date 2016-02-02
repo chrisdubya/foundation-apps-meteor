@@ -1,12 +1,8 @@
 Package.describe({
   name: 'chrisdubya:foundation-apps',
-  version: '0.0.3',
-  // Brief, one-line summary of the package.
+  version: '0.0.4',
   summary: 'Foundation Apps Meteor Package with SCSS and JS',
-  // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/chrisdubya/foundation-apps-meteor',
-  // By default, Meteor will default to using README.md for documentation.
-  // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
 });
 
@@ -17,8 +13,8 @@ Package.onUse(function(api) {
   api.imply('fourseven:scss@3.4.1', ['client', 'server']);
   api.addFiles([
       // SCSS
-      '_foundation.scss',
-      '_settings.scss',
+      'scss/foundation.scss',
+      'scss/_settings.scss',
 
       'scss/foundation.scss',
       'scss/vendor/_normalize.scss',
@@ -55,13 +51,17 @@ Package.onUse(function(api) {
       'scss/components/_tabs.scss',
       'scss/components/_accordion.scss',
       'scss/components/_typography.scss',
-      'scss/components/_utilities.scss'
-  ], 'server');
+      'scss/components/_utilities.scss',
+
+      // JS
+      'js/foundation-apps.min.js',
+      'js/foundation-apps-templates.min.js'
+  ], ['client', 'server']);
 });
 
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
   api.use('chrisdubya:foundation-apps');
-  api.addFiles('foundation-apps-tests.js');
+  api.addFiles('foundation-apps-tests.js', ['client', 'server']);
 });

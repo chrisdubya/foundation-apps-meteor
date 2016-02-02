@@ -6,4 +6,4 @@
 
 ### installation ###
 
-* meteor add chrisdubya:foundation-apps
+* `meteor add chrisdubya:foundation-apps`
