@@ -16,8 +16,8 @@ Package.onUse(function(api) {
     api.use(['ecmascript', 'jquery', 'fourseven:scss@3.4.1'], 'client');
     api.addFiles('.npm/package/node_modules/motion-ui/dist/motion-ui.css', 'client');
     api.addFiles('.npm/package/node_modules/motion-ui/dist/motion-ui.js', 'client');
-    api.addFiles('dist/foundation-apps.js', 'client');
-    api.addFiles('dist/foundation-apps-templates.js', 'client');
+    api.addFiles('dist/js/foundation-apps.js', 'client');
+    api.addFiles('dist/js/foundation-apps-templates.js', 'client');
     api.addFiles([
 
         'scss/foundation.scss',
