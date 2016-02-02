@@ -1,6 +1,6 @@
 Package.describe({
   name: 'chrisdubya:foundation-apps',
-  version: '0.0.8',
+  version: '0.0.9',
   summary: 'Foundation Apps Meteor Package with SCSS and JS',
   git: 'https://github.com/chrisdubya/foundation-apps-meteor',
   documentation: 'README.md'
@@ -12,10 +12,6 @@ Package.onUse(function(api) {
   api.imply('fourseven:scss@3.4.1', ['client', 'server']);
   api.use('angular@1.3.5');
   api.addFiles([
-      // JS
-      'js/foundation-apps.js',
-      'js/foundation-apps-templates.js',
-
       // SCSS
       'scss/foundation.scss',
 
