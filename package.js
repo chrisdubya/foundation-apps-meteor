@@ -10,6 +10,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
   api.use('ecmascript');
   api.use('fourseven:scss@3.4.1', ['client', 'server']);
+  api.use('angular');
   api.imply('fourseven:scss@3.4.1', ['client', 'server']);
   api.addFiles([
       // SCSS
