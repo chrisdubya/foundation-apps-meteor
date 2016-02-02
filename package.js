@@ -14,9 +14,7 @@ Package.onUse(function(api) {
   api.addFiles([
       // SCSS
       'scss/foundation.scss',
-      'scss/_settings.scss',
 
-      'scss/foundation.scss',
       'scss/vendor/_normalize.scss',
 
       'scss/helpers/_functions.scss',
